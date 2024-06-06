@@ -26,3 +26,4 @@ function App() {
 }
 
 export default App
+// Parvinder Singh updated App.jsx (Simulated Commit 2)
