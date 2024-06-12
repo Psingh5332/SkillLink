@@ -11,3 +11,4 @@ export default defineConfig({
 })
 
 // Parvinder Singh updated vite.config.js (Simulated Commit 4)
+// Jigisha Prajapati updated vite.config.js (Simulated Commit 4)
