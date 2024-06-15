@@ -72,3 +72,4 @@ function Footer() {
 export default Footer
 // Parvinder Singh updated Footer.jsx (Simulated Commit 3)
 // Jigisha Prajapati updated Footer.jsx (Simulated Commit 3)
+// Raghav Mahendru updated Footer.jsx (Simulated Commit 3)
