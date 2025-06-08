@@ -8,3 +8,4 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+// Parvinder Singh updated src/main.jsx (Week 2, June 2025)
