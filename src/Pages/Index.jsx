@@ -571,3 +571,4 @@ function Index() {
 }
 
 export default Index
+// Parvinder Singh updated src/Pages/Index.jsx (Week 3, June 2025)
