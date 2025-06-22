@@ -105,3 +105,4 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
+// Parvinder Singh updated src/Components/RegisterPage.jsx (Week 4, June 2025)
