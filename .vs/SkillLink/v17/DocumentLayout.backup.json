@@ -1,0 +1,391 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\dto\\imageuploadrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\dto\\imageuploadrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\repositories\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\repositories\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\controllers\\tagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\domain\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\domain\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\domain\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\KAUSHAL\\AppData\\Local\\Temp\\.vsdbgsrc\\d8933d8c84a635e1c37e9eb18c6bd032217008a8799fd62d3548cc8ad96b6005\\Task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\dto\\addeventrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\dto\\addeventrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\data\\skilllinkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\data\\skilllinkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\domain\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\domain\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\model\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\model\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|d:\\dotnetcore-projects\\skillink\\skillink\\repositories\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4CA316-4947-4334-9653-23C157616C64}|SkilLink\\SkillLink.csproj|solutionrelative:skillink\\repositories\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 381,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddEventRequestDto.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\AddEventRequestDto.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Dto\\AddEventRequestDto.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\AddEventRequestDto.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Dto\\AddEventRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T08:18:15.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Dto\\LoginResponseDto.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\LoginResponseDto.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Dto\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:53:11.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\KAUSHAL\\AppData\\Local\\Temp\\.vsdbgsrc\\d8933d8c84a635e1c37e9eb18c6bd032217008a8799fd62d3548cc8ad96b6005\\Task.cs",
+              "ToolTip": "C:\\Users\\KAUSHAL\\AppData\\Local\\Temp\\.vsdbgsrc\\d8933d8c84a635e1c37e9eb18c6bd032217008a8799fd62d3548cc8ad96b6005\\Task.cs",
+              "ViewState": "AgIAAAAGAAAAAAAAAAAAAAoGAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T16:36:28.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SkillsController.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\SkillsController.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Controllers\\SkillsController.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\SkillsController.cs",
+              "RelativeToolTip": "SkilLink\\Controllers\\SkillsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswGkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T17:15:36.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageUploadRequestDto.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\ImageUploadRequestDto.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Dto\\ImageUploadRequestDto.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\ImageUploadRequestDto.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Dto\\ImageUploadRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T18:55:46.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\EventRepository.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Repositories\\EventRepository.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\EventRepository.cs",
+              "RelativeToolTip": "SkilLink\\Repositories\\EventRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T10:03:17.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillRepository.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\SkillRepository.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Repositories\\SkillRepository.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\SkillRepository.cs",
+              "RelativeToolTip": "SkilLink\\Repositories\\SkillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T11:51:58.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TagsController.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\TagsController.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Controllers\\TagsController.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\TagsController.cs",
+              "RelativeToolTip": "SkilLink\\Controllers\\TagsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T03:30:54.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Domain\\ApplicationUser.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\ApplicationUser.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Domain\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:48:41.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Event.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\Event.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Domain\\Event.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\Event.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Domain\\Event.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T08:30:13.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SkilLink\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAA3wJEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T18:37:50.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Controllers\\EventController.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\EventController.cs",
+              "RelativeToolTip": "SkilLink\\Controllers\\EventController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAawFAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T08:22:53.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SkillLinkDbContext.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Data\\SkillLinkDbContext.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Data\\SkillLinkDbContext.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Data\\SkillLinkDbContext.cs",
+              "RelativeToolTip": "SkilLink\\Data\\SkillLinkDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T09:22:44.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Controllers\\ImagesController.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "SkilLink\\Controllers\\ImagesController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAvwC4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T03:59:32.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Dto\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Dto\\RegisterRequestDto.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Dto\\RegisterRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T09:51:08.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\Image.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Model\\Domain\\Image.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Model\\Domain\\Image.cs",
+              "RelativeToolTip": "SkilLink\\Model\\Domain\\Image.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wBAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T03:25:27.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Program.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Program.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Program.cs",
+              "RelativeToolTip": "SkilLink\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T10:09:06.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Mappings\\AutoMapperProfiles.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Mappings\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "SkilLink\\Mappings\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA0wBsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T08:28:37.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IEventRepository.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\IEventRepository.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Repositories\\IEventRepository.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Repositories\\IEventRepository.cs",
+              "RelativeToolTip": "SkilLink\\Repositories\\IEventRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T10:03:01.57Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 19,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250717100736_AppUserUpdation.cs",
+              "DocumentMoniker": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs",
+              "RelativeDocumentMoniker": "SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs",
+              "ToolTip": "D:\\DOTNETCORE-PROJECTS\\SkilLink\\SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs",
+              "RelativeToolTip": "SkilLink\\Migrations\\SkillLinkIdentityDb\\20250717100736_AppUserUpdation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T10:07:36.959Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

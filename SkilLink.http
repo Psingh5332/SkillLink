@@ -1,0 +1,6 @@
+@SkilLink_HostAddress = http://localhost:5250
+
+GET {{SkilLink_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
