@@ -1,0 +1,22 @@
+# ---------- STEP 1: Build ----------
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /app
+
+# Copy and restore project
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy everything else and build
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# ---------- STEP 2: Run ----------
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /app
+COPY --from=build /app/out .
+
+# Expose port 80 to the internet
+EXPOSE 80
+
+# Run the app
+ENTRYPOINT ["dotnet", "SkillLink.dll"]
