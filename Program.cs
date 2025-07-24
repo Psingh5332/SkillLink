@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("http://localhost:3000")
+        builder => builder.WithOrigins("https://unrivaled-cocada-ea13b2.netlify.app/")
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 
