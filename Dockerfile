@@ -18,6 +18,9 @@ RUN dotnet publish -c Release -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
+# Create the directory for image uploads
+RUN mkdir -p ImageUploads
+
 # Copy the published output from the build stage
 COPY --from=build /app .
 
