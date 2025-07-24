@@ -15,7 +15,7 @@ COPY . .
 RUN dotnet publish -c Release -o /app
 
 # Stage 2: Create the final runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 
 # Copy the published output from the build stage
