@@ -1,7 +1,6 @@
 [build]
-  base = "client-app"
-  publish = "client-app/dist"
-  command = "npm install --legacy-peer-deps && npm run dev"
+  publish = "dist"
+  command = "npm install --legacy-peer-deps && npm run build"
 
 [context.production.environment]
   NODE_VERSION = "22.17.1"
