@@ -9,7 +9,6 @@ import user1 from '../../../assets/user1.jpg';
 function Peoples() {
     const [Peoples, setPeoples] = useState([]);
     const { user } = useUser();
-    console.log("user: -", user);
     useEffect(() => {
         fetchPeoples();
     }, []);
