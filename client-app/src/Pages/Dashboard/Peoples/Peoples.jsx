@@ -49,6 +49,7 @@ function Peoples() {
                                                         <p className="text-muted mb-1">{People.userName}</p>
                                                         <div className="d-flex align-items-center gap-2">
                                                             <span>Expertise</span>
+                                                             <span>EMaster</span>
                                                             <span>Skills</span>
                                                         </div>
                                                     </div>
