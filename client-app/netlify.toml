@@ -4,6 +4,7 @@
 
 [context.production.environment]
   NODE_VERSION = "22.17.1"
+  VITE_API_URL = "https://skilllink-root.onrender.com"  # 🔁 Replace with your actual backend URL
 
 [[redirects]]
   from = "/*"
