@@ -66,11 +66,14 @@ builder.Services.AddSwaggerGen(options =>
 
 //Add  dbcontext for sql server database
 builder.Services.AddDbContext<SkillLinkDbContext>(option =>
-                option.UseSqlServer(builder.Configuration.GetConnectionString("SkillLinkConnectionString")));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 //add identity database 
+
+
 builder.Services.AddDbContext<SkillLinkIdentityDbContext>(option =>
-                option.UseSqlServer(builder.Configuration.GetConnectionString("SkillLinkAuthConnectionString")));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+
 
 
 // adding repostiroy
