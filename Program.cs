@@ -126,6 +126,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         });
 
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 104857600; // ~100 MB
+});
+
 
 var app = builder.Build();
 
@@ -152,6 +157,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 
 
