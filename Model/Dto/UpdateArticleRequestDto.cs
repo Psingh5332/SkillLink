@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SkillLink.Model.Dto
 {
-    public class AddArticleReqestDto
+    public class UpdateArticleRequestDto
     {
+        public Guid Id { get; set; }
         [Required]
         public string Heading { get; set; }
         [Required]
@@ -20,9 +20,7 @@ namespace SkillLink.Model.Dto
         public bool IsVarified { get; set; }
         public Guid categoryId { get; set; }
 
-       // public IEnumerable<SelectListItem> Tags { get; set; }
+        // public IEnumerable<SelectListItem> Tags { get; set; }
         public string[] selectedTags { get; set; } = Array.Empty<string>();
-       
-        
     }
 }

@@ -20,7 +20,6 @@ namespace SkillLink.Model.Dto
         public string Time { get; set; }
         public string? Type { get; set; }
         public Guid UserId { get; set; }
-        [Required]
         public string? ImageUrl { get; set; }
         public bool isPublic { get; set; }
     }
