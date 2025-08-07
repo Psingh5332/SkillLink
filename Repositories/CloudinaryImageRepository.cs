@@ -17,11 +17,9 @@ namespace SkillLink.Repositories
                 config.GetSection("CloudinarySettings")["ApiKey"],
                 config.GetSection("CloudinarySettings")["ApiSecret"]
                 );
-
-         
+        
         }
        
-
        public async Task<string> UploadAsync(IFormFile file)
         {
             var client = new Cloudinary(account);
@@ -42,6 +40,7 @@ namespace SkillLink.Repositories
          }
       }
 }
+
 
 
 
