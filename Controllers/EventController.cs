@@ -28,6 +28,9 @@ namespace SkillLink.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
+        
+        
+        
         {
             var EventDomains = await eventRepository.GetAllAsync();
 
@@ -53,9 +56,8 @@ namespace SkillLink.Controllers
         }
 
 
-
+        [Authorize]
         [HttpPost]
-
         [Route("Create")]
         public async Task<IActionResult> Create([FromBody] AddEventRequestDto eventReqDto)
         {
@@ -72,7 +74,7 @@ namespace SkillLink.Controllers
                     isPublic = eventReqDto.isPublic,
                     Date=eventReqDto.Date,
                     Time=eventReqDto.Time,
-                    Created=eventReqDto.Created
+                    Created=eventReqDto.Created,
 
                 };
 
@@ -154,10 +156,10 @@ namespace SkillLink.Controllers
 
             //Map Domain to DTO Model
 
-            var EventDto = mapper.Map<EventDto>(EventDomain);
+            //var EventDto = mapper.Map<EventDto>(EventDomain);
 
 
-            return Ok(EventDto);
+            return Ok(EventDomain);
         }
 
         [HttpGet]
@@ -173,8 +175,8 @@ namespace SkillLink.Controllers
 
 
             //Map Domain to dto
-            var categoryDto = mapper.Map<EventDto>(eventDomain);
-            return Ok(categoryDto);
+           // var categoryDto = mapper.Map<EventDto>(eventDomain);
+            return Ok(eventDomain);
         }
     }
 }
