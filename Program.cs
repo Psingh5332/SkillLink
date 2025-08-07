@@ -28,10 +28,10 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.Configure<FormOptions>(options =>
-{
-    options.MultipartBodyLengthLimit = 104857600; // ~100 MB
-});
+// builder.Services.Configure<FormOptions>(options =>
+// {
+//     options.MultipartBodyLengthLimit = 104857600; // ~100 MB
+// });
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -158,6 +158,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 
 
