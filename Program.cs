@@ -83,7 +83,7 @@ builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserSkillRepository, UserSkillRepository>();
 builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
-builder.Services.AddScoped<ICloudImageRepository, CloudinaryImageRepository>();
+
 
 //adding automapper services 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
