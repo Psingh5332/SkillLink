@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("https://unrivaled-cocada-ea13b2.netlify.app")
+        builder => builder.WithOrigins("http://localhost:3000")
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 
@@ -68,9 +68,9 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddDbContext<SkillLinkDbContext>(option =>
                 option.UseSqlServer(builder.Configuration.GetConnectionString("SkillLinkConnectionString")));
 
-//add identity database 
-builder.Services.AddDbContext<SkillLinkIdentityDbContext>(option =>
-                option.UseSqlServer(builder.Configuration.GetConnectionString("SkillLinkAuthConnectionString")));
+////add identity database 
+//builder.Services.AddDbContext<SkillLinkIdentityDbContext>(option =>
+//                option.UseSqlServer(builder.Configuration.GetConnectionString("SkillLinkAuthConnectionString")));
 
 
 // adding repostiroy
@@ -82,7 +82,8 @@ builder.Services.AddScoped<IImageRepostiriy, LocalImageRepository>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IUserSkillRepository, UserSkillRepository>();
-
+builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
+builder.Services.AddScoped<ICloudImageRepository, CloudinaryImageRepository>();
 
 //adding automapper services 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
@@ -92,7 +93,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 builder.Services.AddIdentityCore<ApplicationUser>()
        .AddRoles<IdentityRole>()
        .AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>("SkillLink")
-       .AddEntityFrameworkStores<SkillLinkIdentityDbContext>()
+       .AddEntityFrameworkStores<SkillLinkDbContext>()
        .AddDefaultTokenProviders();
 
 builder.Services.Configure<IdentityOptions>(options => {
@@ -130,11 +131,11 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
+if (app.Environment.IsDevelopment())
+{
     app.UseSwagger();
     app.UseSwaggerUI();
-// }
+}
 app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 
