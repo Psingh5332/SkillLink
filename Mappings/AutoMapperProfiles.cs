@@ -27,8 +27,19 @@ namespace SkillLink.Mappings
             //event mapping
             CreateMap<AddEventRequestDto, Event>().ReverseMap();
 
-            //event mapping
-            CreateMap<AddEventRequestDto, Event>().ReverseMap();
+            //user Skills mapping
+            CreateMap<UserSkills, UserSkillDto>().ReverseMap();
+            CreateMap<AddUserSkillRequestDto, UserSkills>().ReverseMap();
+
+            CreateMap<UpdateUserSkillRequestDto, UserSkills>().ReverseMap();
+
+            //user articles mapping
+            CreateMap<Article, AddArticleReqestDto>().ReverseMap();
+            CreateMap<Event, UpdateEventRequestDto>().ReverseMap();
+
+
+
+
 
         }
 
