@@ -37,6 +37,22 @@
   },
   {
     "ContainingType": "SkillLink.Controllers.AccountController",
+    "Method": "GetUserById",
+    "RelativePath": "api/Account/GetUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/Login",
     "HttpMethod": "POST",
@@ -117,6 +133,115 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.AdminController",
+    "Method": "GetDashboardSummary",
+    "RelativePath": "api/Admin/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "SkillLink.Model.Dto.AdminDashboardSummeryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "GetAll",
+    "RelativePath": "api/Article",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "Delete",
+    "RelativePath": "api/Article/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "GetById",
+    "RelativePath": "api/Article/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "Update",
+    "RelativePath": "api/Article/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateArticleRequestDto",
+        "Type": "SkillLink.Model.Dto.UpdateArticleRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "Create",
+    "RelativePath": "api/Article/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "articleRequestDto",
+        "Type": "SkillLink.Model.Dto.AddArticleReqestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.ArticleController",
+    "Method": "Feed",
+    "RelativePath": "api/Article/Feed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -286,18 +411,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "File",
+        "Name": "file",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileDescription",
-        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -487,6 +602,95 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "GetAll",
+    "RelativePath": "api/UserSkill",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "Delete",
+    "RelativePath": "api/UserSkill/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "GetById",
+    "RelativePath": "api/UserSkill/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "Create",
+    "RelativePath": "api/UserSkill/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userSkillRequestDto",
+        "Type": "SkillLink.Model.Dto.AddUserSkillRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "GetAllSkills",
+    "RelativePath": "api/UserSkill/GetAllSkills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillLink.Controllers.UserSkillController",
+    "Method": "Update",
+    "RelativePath": "api/UserSkill/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "userSkillRequestDto",
+        "Type": "SkillLink.Model.Dto.UpdateUserSkillRequestDto",
         "IsRequired": true
       }
     ],
