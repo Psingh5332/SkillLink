@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SkillLink.Data;
 using SkillLink.Model.Domain;
+using System.Data.Common;
 using System.Security.Cryptography.Xml;
 
 namespace SkillLink.Repositories
@@ -13,41 +14,46 @@ namespace SkillLink.Repositories
         {
             this.dbContext = dbContext;
         }
-        public async Task<int> CountByUserAsync(Guid id)
+        public async Task<int> CountByUserAsync(string id)
         {
-            return await dbContext.Articles.CountAsync(a => a.AuthorId == id);
+            return await dbContext.Articles.CountAsync(a => a.UserId == id);
         }
 
-        public Task<Article> CreateAsync(Article article)
+        public async Task<Article> CreateAsync(Article article)
         {
-            throw new NotImplementedException();
+
+            await dbContext.Articles.AddAsync(article);
+            await dbContext.SaveChangesAsync();
+            return article;
         }
 
-        public async Task<Article> DeleteAsync(Guid id)
+        public async Task<Article?> DeleteAsync(Guid id)
         {
             var existingArticle = await dbContext.Articles.FirstOrDefaultAsync(x => x.Id == id);
             if (existingArticle == null)
             {
                 return null;
             }
-             dbContext.Articles.Remove(existingArticle);
-            dbContext.SaveChangesAsync();
+
+            dbContext.Articles.Remove(existingArticle);
+            await dbContext.SaveChangesAsync();
+
             return existingArticle;
         }
 
         public async Task<List<Article>> GetAllAsync()
         {
-            return await dbContext.Articles.ToListAsync();
+            return await dbContext.Articles.Include(x=>x.User).Include(x=>x.category).ToListAsync();
         }
 
-        public Task<List<Article>> GetAllByUserAsync(Guid id)
+        public async Task<List<Article>> GetAllByUserAsync(string id)
         {
-            throw new NotImplementedException();
+            return await dbContext.Articles.Include(x=>x.User).Include(x=>x.category).Where(x => x.UserId == id).ToListAsync();
         }
 
         public async Task<Article?> GetByIdAsync(Guid id)
         {
-            return await dbContext.Articles.FirstOrDefaultAsync(x => x.Id == id);
+            return await dbContext.Articles.Include(x=>x.User).Include(x=>x.category).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Article> UpdateAsync(Guid id, Article article)
@@ -57,7 +63,7 @@ namespace SkillLink.Repositories
             {
                 return null;
             }
-            existingArticle.AuthorId = id;
+            existingArticle.UserId = article.UserId;
             existingArticle.Title = article.Title;
             existingArticle.Heading = article.Heading;
             existingArticle.ShortDescription = article.ShortDescription;
@@ -68,6 +74,11 @@ namespace SkillLink.Repositories
             existingArticle.IsVarified = article.IsVarified;
             await dbContext.SaveChangesAsync();
             return existingArticle;
+        }
+
+        public async Task<int> GetSkillsByUser(string  id)
+        {
+            return await dbContext.Articles.Where(x=>x.UserId==id).CountAsync();
         }
     }
 }
