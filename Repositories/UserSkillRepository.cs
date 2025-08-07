@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SkilLink.Model.Domain;
 using SkillLink.Data;
 using SkillLink.Model.Domain;
 
@@ -36,22 +37,25 @@ namespace SkillLink.Repositories
 
         public  async Task<List<UserSkills>> GetAllAsync()
         {
-            return await dbContext.UserSkill.ToListAsync();
+            return await dbContext.UserSkill.Include(x=>x.User).Include(c=>c.category).ToListAsync();
         }
 
         public async Task<UserSkills?> GetByIdAsync(Guid id)
         {
-            return await dbContext.UserSkill.FirstOrDefaultAsync(x => x.Id == id);
+            return await dbContext.UserSkill
+       .Include(x => x.category)
+       .Include(x => x.User)
+       .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<UserSkills>> GetSkillsByUser(string userId)
         {
-            return await dbContext.UserSkill.Where(x => x.UserId == userId).ToListAsync();
+            return await dbContext.UserSkill.Include(x => x.category).Where(x => x.UserId == userId).ToListAsync();
         }
 
         public async Task<bool> isSkillExist(string Name)
         {
-            UserSkills? existingSkill = await dbContext.UserSkill.FirstOrDefaultAsync(x => x.Skill.Name == Name);
+            UserSkills? existingSkill = await dbContext.UserSkill.FirstOrDefaultAsync(x => x.Name == Name);
 
             if (existingSkill == null)
             {
@@ -68,12 +72,12 @@ namespace SkillLink.Repositories
                 return null;
             }
 
-            existingSkill.SkillId = userSkill.SkillId;
-            existingSkill.Type = userSkill.Type;
-            existingSkill.Availability = userSkill.Availability;
+            existingSkill.CategoryId = userSkill.CategoryId;
+            existingSkill.Name = userSkill.Name;
             existingSkill.Description = userSkill.Description;
-           
-
+            existingSkill.Rating = userSkill.Rating;
+            existingSkill.ThumbnailUrl = userSkill.ThumbnailUrl;
+            
             await dbContext.SaveChangesAsync();
             return existingSkill;
         }
