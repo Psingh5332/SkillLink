@@ -34,53 +34,54 @@ namespace SkillLink.Repositories
 
        public async Task<string> UploadAsync(IFormFile file)
         {
-            // var client = new Cloudinary(account);
-            // var uploadParams = new ImageUploadParams()
-            // {
-            //     File = new FileDescription(file.FileName, file.OpenReadStream()),
-            //     Folder = "skilllink_uploads"  // Optional folder in Cloudinary
-            // };
-            // var uploadResult = await client.UploadAsync(uploadParams);
+            var client = new Cloudinary(account);
+            var uploadParams = new ImageUploadParams()
+            {
+                File = new FileDescription(file.FileName, file.OpenReadStream()),
+                Folder = "skilllink_uploads"  // Optional folder in Cloudinary
+            };
+            var uploadResult = await client.UploadAsync(uploadParams);
 
-            // if (uploadResult!=null && uploadResult.StatusCode == System.Net.HttpStatusCode.OK)
-            // {
-            //     return uploadResult.SecureUrl.ToString();
-            // }
+            if (uploadResult!=null && uploadResult.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                return uploadResult.SecureUrl.ToString();
+            }
 
-            // return null;
+            return null;
 
-             try
-                {
-                    var client = new Cloudinary(account);
+             // try
+             //    {
+             //        var client = new Cloudinary(account);
             
-                    var uploadParams = new ImageUploadParams
-                    {
-                        File = new FileDescription(file.FileName, file.OpenReadStream()),
-                        Folder = "skilllink_uploads"
-                    };
+             //        var uploadParams = new ImageUploadParams
+             //        {
+             //            File = new FileDescription(file.FileName, file.OpenReadStream()),
+             //            Folder = "skilllink_uploads"
+             //        };
             
-                    var uploadResult = await client.UploadAsync(uploadParams);
+             //        var uploadResult = await client.UploadAsync(uploadParams);
             
-                    if (uploadResult != null && uploadResult.StatusCode == HttpStatusCode.OK)
-                    {
-                        Console.WriteLine("Upload successful. URL: " + uploadResult.SecureUrl);
-                        return uploadResult.SecureUrl.ToString();
-                    }
+             //        if (uploadResult != null && uploadResult.StatusCode == HttpStatusCode.OK)
+             //        {
+             //            Console.WriteLine("Upload successful. URL: " + uploadResult.SecureUrl);
+             //            return uploadResult.SecureUrl.ToString();
+             //        }
             
-                    Console.WriteLine("Upload failed. StatusCode: " + uploadResult?.StatusCode);
-                    Console.WriteLine("Error: " + uploadResult?.Error?.Message);
+             //        Console.WriteLine("Upload failed. StatusCode: " + uploadResult?.StatusCode);
+             //        Console.WriteLine("Error: " + uploadResult?.Error?.Message);
             
-                    return null;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Exception during Cloudinary upload: " + ex.Message);
-                    Console.WriteLine("StackTrace: " + ex.StackTrace);
-                    return null;
-                }
+             //        return null;
+             //    }
+             //    catch (Exception ex)
+             //    {
+             //        Console.WriteLine("Exception during Cloudinary upload: " + ex.Message);
+             //        Console.WriteLine("StackTrace: " + ex.StackTrace);
+             //        return null;
+             //    }
              }
          }
 }
+
 
 
 
