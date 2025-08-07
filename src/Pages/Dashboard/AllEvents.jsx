@@ -79,3 +79,12 @@ function AllEvents() {
 }
 
 export default AllEvents;
+ const fetchEvents = async () => {
+        try {
+            const response = await axios.get('https://localhost:7113/api/Event');
+            setEvents(response.data);
+        }
+        catch (error) {
+            console.error('Error fetching Events :', error);
+        }
+    }
