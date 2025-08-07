@@ -49,37 +49,38 @@ namespace SkillLink.Repositories
 
             // return null;
 
-            try
-    {
-        var client = new Cloudinary(account);
-
-        var uploadParams = new ImageUploadParams
-        {
-            File = new FileDescription(file.FileName, file.OpenReadStream()),
-            Folder = "skilllink_uploads"
-        };
-
-        var uploadResult = await client.UploadAsync(uploadParams);
-
-        if (uploadResult != null && uploadResult.StatusCode == HttpStatusCode.OK)
-        {
-            Console.WriteLine("Upload successful. URL: " + uploadResult.SecureUrl);
-            return uploadResult.SecureUrl.ToString();
-        }
-
-        Console.WriteLine("Upload failed. StatusCode: " + uploadResult?.StatusCode);
-        Console.WriteLine("Error: " + uploadResult?.Error?.Message);
-
-        return null;
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine("Exception during Cloudinary upload: " + ex.Message);
-        Console.WriteLine("StackTrace: " + ex.StackTrace);
-        return null;
-    }
-        }
-    }
+             try
+                {
+                    var client = new Cloudinary(account);
+            
+                    var uploadParams = new ImageUploadParams
+                    {
+                        File = new FileDescription(file.FileName, file.OpenReadStream()),
+                        Folder = "skilllink_uploads"
+                    };
+            
+                    var uploadResult = await client.UploadAsync(uploadParams);
+            
+                    if (uploadResult != null && uploadResult.StatusCode == HttpStatusCode.OK)
+                    {
+                        Console.WriteLine("Upload successful. URL: " + uploadResult.SecureUrl);
+                        return uploadResult.SecureUrl.ToString();
+                    }
+            
+                    Console.WriteLine("Upload failed. StatusCode: " + uploadResult?.StatusCode);
+                    Console.WriteLine("Error: " + uploadResult?.Error?.Message);
+            
+                    return null;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Exception during Cloudinary upload: " + ex.Message);
+                    Console.WriteLine("StackTrace: " + ex.StackTrace);
+                    return null;
+                }
+             }
+         }
 }
+
 
 
