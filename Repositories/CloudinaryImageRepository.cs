@@ -19,16 +19,16 @@ namespace SkillLink.Repositories
             //     );
 
             var cloudName = config["CloudinarySettings:CloudName"];
-    var apiKey = config["CloudinarySettings:ApiKey"];
-    var apiSecret = config["CloudinarySettings:ApiSecret"];
+            var apiKey = config["CloudinarySettings:ApiKey"];
+            var apiSecret = config["CloudinarySettings:ApiSecret"];
 
-    Console.WriteLine("===== Cloudinary Config on Render =====");
-    Console.WriteLine("CloudName: " + cloudName);
-    Console.WriteLine("ApiKey: " + apiKey);
-    Console.WriteLine("ApiSecret: " + (string.IsNullOrEmpty(apiSecret) ? "NOT SET" : "SET"));
-    Console.WriteLine("=======================================");
-
-    account = new Account(cloudName, apiKey, apiSecret);
+            Console.WriteLine("===== Cloudinary Config on Render =====");
+            Console.WriteLine("CloudName: " + cloudName);
+            Console.WriteLine("ApiKey: " + apiKey);
+            Console.WriteLine("ApiSecret: " + (string.IsNullOrEmpty(apiSecret) ? "NOT SET" : "SET"));
+            Console.WriteLine("=======================================");
+        
+            account = new Account(cloudName, apiKey, apiSecret);
         }
        
 
@@ -81,4 +81,5 @@ namespace SkillLink.Repositories
         }
     }
 }
+
 
