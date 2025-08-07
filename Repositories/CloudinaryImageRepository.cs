@@ -13,22 +13,22 @@ namespace SkillLink.Repositories
         public CloudinaryImageRepository(IConfiguration config)
         {
             this.config = config;
-            // account = new Account(config.GetSection("CloudinarySettings")["CloudName"],
-            //     config.GetSection("CloudinarySettings")["ApiKey"],
-            //     config.GetSection("CloudinarySettings")["ApiSecret"]
-            //     );
+            account = new Account(config.GetSection("CloudinarySettings")["CloudName"],
+                config.GetSection("CloudinarySettings")["ApiKey"],
+                config.GetSection("CloudinarySettings")["ApiSecret"]
+                );
 
-            var cloudName = config["CloudinarySettings:CloudName"];
-            var apiKey = config["CloudinarySettings:ApiKey"];
-            var apiSecret = config["CloudinarySettings:ApiSecret"];
+            // var cloudName = config["CloudinarySettings:CloudName"];
+            // var apiKey = config["CloudinarySettings:ApiKey"];
+            // var apiSecret = config["CloudinarySettings:ApiSecret"];
 
-            Console.WriteLine("===== Cloudinary Config on Render =====");
-            Console.WriteLine("CloudName: " + cloudName);
-            Console.WriteLine("ApiKey: " + apiKey);
-            Console.WriteLine("ApiSecret: " + (string.IsNullOrEmpty(apiSecret) ? "NOT SET" : "SET"));
-            Console.WriteLine("=======================================");
+            // Console.WriteLine("===== Cloudinary Config on Render =====");
+            // Console.WriteLine("CloudName: " + cloudName);
+            // Console.WriteLine("ApiKey: " + apiKey);
+            // Console.WriteLine("ApiSecret: " + (string.IsNullOrEmpty(apiSecret) ? "NOT SET" : "SET"));
+            // Console.WriteLine("=======================================");
         
-            account = new Account(cloudName, apiKey, apiSecret);
+            // account = new Account(cloudName, apiKey, apiSecret);
         }
        
 
@@ -81,6 +81,7 @@ namespace SkillLink.Repositories
              }
          }
 }
+
 
 
 
