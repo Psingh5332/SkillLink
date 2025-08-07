@@ -17,6 +17,12 @@ namespace SkillLink.Repositories
                 config.GetSection("CloudinarySettings")["ApiKey"],
                 config.GetSection("CloudinarySettings")["ApiSecret"]
                 );
+
+                Console.WriteLine("======== Cloudinary Config ========");
+Console.WriteLine("CloudName: " + cloudName);
+Console.WriteLine("ApiKey: " + apiKey);
+Console.WriteLine("ApiSecret: " + (string.IsNullOrEmpty(apiSecret) ? "NOT SET" : "SET"));
+Console.WriteLine("===================================");
         
         }
        
@@ -40,6 +46,7 @@ namespace SkillLink.Repositories
          }
       }
 }
+
 
 
 
