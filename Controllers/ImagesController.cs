@@ -5,6 +5,9 @@ using SkillLink.Model.Dto;
 using SkillLink.Repositories;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
+using CloudinaryDotNet;
+using System.Net;
+
 
 namespace SkillLink.Controllers
 {
@@ -12,44 +15,65 @@ namespace SkillLink.Controllers
     [ApiController]
     public class ImagesController : ControllerBase
     {
-        private readonly IImageRepostiriy imageRepository;
+        private readonly ICloudImageRepository imgRepository;
 
-        public ImagesController(IImageRepostiriy imageRepository)
+        //private readonly IImageRepostiriy imageRepository;
+
+        //public ImagesController(IImageRepostiriy imageRepository)
+        //{
+        //    this.imageRepository = imageRepository;
+        //}
+
+
+
+        ////Post :api/Images/Upload
+
+        //[HttpPost]
+        //[Authorize]
+        //[Route("Upload")]
+        //public async Task<IActionResult> Upload([FromForm] ImageUploadRequestDto requestDto)
+        //{
+        //    ValidateFileUpload(requestDto);
+        //    if(ModelState.IsValid)
+        //    {
+        //        //Upload Image
+        //        //convert DTO to Domain Model
+        //        var imageDomainModel = new Image
+        //        {
+        //            File = requestDto.File,
+        //            FileExtention = Path.GetExtension(requestDto.File.FileName),
+        //            FileName = requestDto.FileName,
+        //            FileSizeInBytes=requestDto.File.Length,
+        //            Description=requestDto.FileDescription,
+
+        //        };
+
+        //        //User repository to upload Image
+        //        await imageRepository.Upload(imageDomainModel);
+        //        return Ok(imageDomainModel);
+        //    }
+        //    return BadRequest(ModelState);
+        //}
+
+
+        public ImagesController(ICloudImageRepository imgRepository)
         {
-            this.imageRepository = imageRepository;
+            this.imgRepository = imgRepository;
         }
-
-
-
-        //Post :api/Images/Upload
 
         [HttpPost]
-        [Authorize]
+       
         [Route("Upload")]
-        public async Task<IActionResult> Upload([FromForm] ImageUploadRequestDto requestDto)
+        public async Task<IActionResult> Upload(IFormFile file)
         {
-            ValidateFileUpload(requestDto);
-            if(ModelState.IsValid)
+           var imgUrl=  await imgRepository.UploadAsync(file);
+            if(imgUrl==null)
             {
-                //Upload Image
-                //convert DTO to Domain Model
-                var imageDomainModel = new Image
-                {
-                    File = requestDto.File,
-                    FileExtention = Path.GetExtension(requestDto.File.FileName),
-                    FileName = requestDto.FileName,
-                    FileSizeInBytes=requestDto.File.Length,
-                    Description=requestDto.FileDescription,
-
-                };
-
-                //User repository to upload Image
-                await imageRepository.Upload(imageDomainModel);
-                return Ok(imageDomainModel);
+                return Problem("Something went wrong",null,(int) HttpStatusCode.InternalServerError);
             }
-            return BadRequest(ModelState);
-        }
 
+            return new JsonResult(new { link = imgUrl });
+        }
         private void ValidateFileUpload(ImageUploadRequestDto request)
         {
             var allowedExtension = new string[] { ".jpg", ".jpeg", ".png" };

@@ -135,13 +135,15 @@ namespace SkillLink.Controllers
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             //custom claim
             var fullName = User.FindFirst("FullName")?.Value;
+            var ImageUrl = User.FindFirst("ProfileImageUrl")?.Value;
 
             return Ok(new
             {
                 UserId = userId,
                 UserName = username,
                 Email = email,
-                FullName=fullName
+                FullName = fullName,
+                ProfileImageUrl = ImageUrl
             });
         }
 
@@ -162,10 +164,36 @@ namespace SkillLink.Controllers
                 user.Email,
                 user.PhoneNumber,
                 // add more fields if needed
-                user.ProfileImageUrl
+                user.ProfileImageUrl,
+                user.FullName
             });
         }
-       
+
+
+        [HttpGet("GetUserById/{id}")]
+        [Authorize]
+        public async Task<IActionResult> GetUserById([FromRoute]string id)
+        {
+           
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+                return NotFound("User not found");
+
+            return Ok(new
+            {
+                user.Id,
+                user.UserName,
+                user.Email,
+                user.PhoneNumber,
+                // add more fields if needed
+                user.ProfileImageUrl,
+                user.FullName
+                
+            });
+        }
+
+
+
         [Authorize]
         [HttpPost]
         [Route("UpdateUser")]
