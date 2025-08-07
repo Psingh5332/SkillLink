@@ -72,7 +72,7 @@ namespace SkillLink.Controllers
                 return Problem("Something went wrong",null,(int) HttpStatusCode.InternalServerError);
             }
 
-            return new JsonResult(new { link = imgUrl });
+            return new JsonResult(new { imagePath = imgUrl });
         }
         private void ValidateFileUpload(ImageUploadRequestDto request)
         {
@@ -92,3 +92,4 @@ namespace SkillLink.Controllers
         }
     }
 }
+
