@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SkillLink.Data;
 
@@ -11,9 +12,11 @@ using SkillLink.Data;
 namespace SkillLink.Migrations
 {
     [DbContext(typeof(SkillLinkDbContext))]
-    partial class SkillLinkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250726093639_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,22 +65,6 @@ namespace SkillLink.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "cda8ec06-af61-4627-8c82-3b3de4ac1ae0",
-                            ConcurrencyStamp = "cda8ec06-af61-4627-8c82-3b3de4ac1ae0",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        },
-                        new
-                        {
-                            Id = "5c83c52e-9426-46a3-b5b2-a6a591ca39f1",
-                            ConcurrencyStamp = "5c83c52e-9426-46a3-b5b2-a6a591ca39f1",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -326,14 +313,9 @@ namespace SkillLink.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("categoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("categoryId");
 
                     b.ToTable("Articles");
                 });
@@ -543,15 +525,7 @@ namespace SkillLink.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SkilLink.Model.Domain.Category", "category")
-                        .WithMany()
-                        .HasForeignKey("categoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("User");
-
-                    b.Navigation("category");
                 });
 
             modelBuilder.Entity("SkillLink.Model.Domain.UserSkills", b =>

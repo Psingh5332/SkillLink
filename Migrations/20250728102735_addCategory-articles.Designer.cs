@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SkillLink.Data;
 
@@ -11,9 +12,11 @@ using SkillLink.Data;
 namespace SkillLink.Migrations
 {
     [DbContext(typeof(SkillLinkDbContext))]
-    partial class SkillLinkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250728102735_addCategory-articles")]
+    partial class addCategoryarticles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

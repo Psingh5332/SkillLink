@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SkillLink.Data;
 
@@ -11,9 +12,11 @@ using SkillLink.Data;
 namespace SkillLink.Migrations
 {
     [DbContext(typeof(SkillLinkDbContext))]
-    partial class SkillLinkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250726095151_Initial-UserRole")]
+    partial class InitialUserRole
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -326,14 +329,9 @@ namespace SkillLink.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<Guid>("categoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("categoryId");
 
                     b.ToTable("Articles");
                 });
@@ -543,15 +541,7 @@ namespace SkillLink.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SkilLink.Model.Domain.Category", "category")
-                        .WithMany()
-                        .HasForeignKey("categoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("User");
-
-                    b.Navigation("category");
                 });
 
             modelBuilder.Entity("SkillLink.Model.Domain.UserSkills", b =>
