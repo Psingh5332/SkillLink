@@ -144,14 +144,15 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.UseStaticFiles(new StaticFileOptions
-{
-     FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"ImageUploads")),
-     RequestPath="/ImageUploads"
-});
+// app.UseStaticFiles(new StaticFileOptions
+// {
+//      FileProvider=new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"ImageUploads")),
+//      RequestPath="/ImageUploads"
+// });
 app.MapControllers();
 
 app.Run();
+
 
 
 
