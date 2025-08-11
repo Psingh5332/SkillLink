@@ -128,14 +128,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-
-
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
+}
+
+// Configure the HTTP request pipeline.
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 
@@ -151,3 +154,4 @@ app.UseStaticFiles(new StaticFileOptions
 app.MapControllers();
 
 app.Run();
+
