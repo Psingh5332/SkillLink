@@ -66,6 +66,8 @@ namespace SkillLink.Controllers
         [Route("Upload")]
         public async Task<IActionResult> Upload(IFormFile file)
         {
+           if (file == null || file.Length == 0)
+                return BadRequest("File is missing or empty");
            var imgUrl=  await imgRepository.UploadAsync(file);
             if(imgUrl==null)
             {
@@ -92,4 +94,5 @@ namespace SkillLink.Controllers
         }
     }
 }
+
 
