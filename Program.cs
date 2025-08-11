@@ -134,7 +134,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
 
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
@@ -158,6 +161,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 
 
