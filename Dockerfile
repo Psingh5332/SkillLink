@@ -12,7 +12,8 @@ RUN dotnet restore
 # COPY . .
 
 # Publish the application in Release configuration
-RUN dotnet publish -c Release -o /app
+# RUN dotnet publish -c Release -o /app
+RUN dotnet publish -c Release -o /app --verbosity detailed
 
 # # Stage 2: Create the final runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
