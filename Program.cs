@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins( "https://skilllinkshare.netlify.app",
+        builder => builder.WithOrigins( "https://skilllinkappfinal.netlify.app",
                                         "http://localhost:3000")
                           .AllowAnyHeader()
                           .AllowAnyMethod());
@@ -161,6 +161,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 
 
