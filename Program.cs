@@ -16,8 +16,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReactApp",
-        builder => builder.WithOrigins("http://localhost:3000")
+     options.AddPolicy("AllowReactApp",
+        builder => builder.WithOrigins( "https://skilllinkwebapp.netlify.app",
+                                        "http://localhost:3000")
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 
@@ -131,11 +132,11 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
 
@@ -151,3 +152,4 @@ app.UseStaticFiles(new StaticFileOptions
 app.MapControllers();
 
 app.Run();
+
